@@ -1,0 +1,42 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1584084371562' stop='1584084372017'>
+    <name>Login suite</name>
+    <title>Login suite</title>
+    <test-cases>
+        <test-case start='1584084371562' status='failed' stop='1584084372015'>
+            <name>user is able to login</name>
+            <title>user is able to login</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Failed: No element found using locator: By(css selector, #loginEmail)</message>
+                <stack-trace>NoSuchElementError: No element found using locator: By(css selector, #loginEmail)
+                    at /usr/local/lib/node_modules/protractor/built/element.js:814:27
+                    at processTicksAndRejections (internal/process/task_queues.js:93:5)Error
+                    at ElementArrayFinder.applyAction_ (/usr/local/lib/node_modules/protractor/built/element.js:459:27)
+                    at ElementArrayFinder.&lt;computed> [as sendKeys] (/usr/local/lib/node_modules/protractor/built/element.js:91:29)
+                    at ElementFinder.&lt;computed> [as sendKeys] (/usr/local/lib/node_modules/protractor/built/element.js:831:22)
+                    at loginPage.enterEmail (/Users/skc/Documents/MyProjects/Test Project/PageObjects/LoginPage.js:12:37)
+                    at loginPage.login (/Users/skc/Documents/MyProjects/Test Project/PageObjects/LoginPage.js:24:20)
+                    at UserContext.&lt;anonymous> (/Users/skc/Documents/MyProjects/Test Project/Tests/Login_spec.js:11:25)
+                    at /usr/local/lib/node_modules/protractor/node_modules/jasminewd2/index.js:112:25
+                    at new Promise (&lt;anonymous>)
+                    at SimpleScheduler.promise (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2242:12)
+                    at schedulerExecute (/usr/local/lib/node_modules/protractor/node_modules/jasminewd2/index.js:95:18)
+                From asynchronous test: 
+                Error
+                    at Suite.&lt;anonymous> (/Users/skc/Documents/MyProjects/Test Project/Tests/Login_spec.js:10:5)
+                    at addSpecsToSuite (/usr/local/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1107:25)
+                    at Env.describe (/usr/local/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1074:7)
+                    at describe (/usr/local/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4399:18)
+                    at Object.&lt;anonymous> (/Users/skc/Documents/MyProjects/Test Project/Tests/Login_spec.js:4:1)
+                    at Module._compile (internal/modules/cjs/loader.js:956:30)
+                    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+                    at Module.load (internal/modules/cjs/loader.js:812:32)
+                    at Function.Module._load (internal/modules/cjs/loader.js:724:14)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
